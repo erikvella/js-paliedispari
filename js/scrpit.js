@@ -62,6 +62,8 @@ console.log('Ha vinto il giocatore')
  if (nUtente <= 0 || nUtente > 5){
   console.log('Errore! Inserisci un numero compreso tra 1 e 5!');
  }
+
+
 // 3 creo le mie funzioni 
 
 
