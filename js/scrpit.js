@@ -86,7 +86,7 @@ const somma = nUtente + nPc;
 
 // 2 creare le regole secondo le quali deve vincere il PC o l'utente in base alle scelte fatte 
 
-if(verificatore(somma , pariDispari)){
+if(rulesGame(somma , pariDispari)){
 risultato = true ;
 console.log('Ha vinto il giocatore')
 }else{
@@ -118,7 +118,7 @@ function randomizer (min , max){
 // faccio la mia funzione per verificare se vince il PC o il giocatore
 
 
-function verificatore (somma , pariDispari){
+function rulesGame (somma , pariDispari){
   let risultato;
   if(somma % 2 === 0 && pariDispari === 'pari'){
     risultato = true;
