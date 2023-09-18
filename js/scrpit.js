@@ -12,21 +12,59 @@
 
 
 // // 1
-// const parolaUtente = prompt('Inserisci una parola');
+const parolaUtente = prompt('Inserisci una parola');
 
 
 // // 2
 
-// const arrayParolaUtente = parolaUtente.split("") ;
-// let parola = ''; 
-// let contrParola = '';
+
  
 // // 3 
+const risultato = {parolaUtente.toLowerCase === parolaGirata} ? 'La parola è palindroma' : 'La parola non è palindroma'
+let parolaGirata = '';
 
-// // for(let i = 0 ; i < arrayParolaUtente.length ; i++){
-// //   parola += arrayParolaUtente[i]; 
-// //   console.log(parola);
-// // }
+function giraParola(parolaDaGIrare){
+// metodo logico per girare la parola 
+// 1 Ciclo for sulla lunghezza della parola decrescente
+// 2 concateno i una stringa tutte le lettere dall'ultima alla prima 
+
+for(let i = parolaDaGIrare.length - 1 ; i >= 0 ; i--){
+ parolaGirata += parolaDaGIrare.charAt(i); 
+}
+return parolaDaGIrare.split('').reverse().join('');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
